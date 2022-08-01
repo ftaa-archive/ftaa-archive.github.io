@@ -1,0 +1,50 @@
+<head><title>FTAA: Federal Temporal Anomaly Authority</title>
+</head><body bgcolor="#ffffff">
+<h1>
+<img src="imgs/letterhead150px.gif">
+</h1>
+<p>
+FTAA #XXXXXX</p>
+<p>
+[SHORT NAME]
+</p>
+<p>
+To: 
+</p>
+<p>
+From: 
+</p>
+<p>
+Subject: 
+</p>
+<p>
+[CONTENTS]
+</p><p>
+
+</p><p>
+
+</p><p>
+
+</p><p>
+
+</p><p>
+[END OF MEMO CONTENTS]
+</p><br><p>
+<img src="imgs/bluebar.gif" alt="Blue Bar">
+</p>
+</p><p>
+<a href="mission.html">Mission</a> | <a href="programs.html">Programs and Operations</a> | <a href="datastore.html">Employee Data Storage</a>
+<p>
+<img src="imgs/bluebar.gif" alt="Blue Bar">
+<p>
+<b>Need help? Have a temporal policy question?</b> Email us at ftaaweb@stjc.edu</a> or by phone at (202) 738-9235.
+</p>
+<p>
+Last Updated: November 10, 1993
+<br>
+This site is best viewed using the <a href="http://www.ncsa.uiuc.edu/SDG/Software/Mosaic/">NCSA Mosaic WWW browser</a>.
+</p>
+
+</p>
+</body></html>
+
