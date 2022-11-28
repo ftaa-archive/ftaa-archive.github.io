@@ -331,9 +331,70 @@ H1 {
   }
 }
 
+
+
+#softflicker {
+  animation: soft-flicker 5s linear infinite;
+}
+
+@keyframes soft-flicker {
+  0% {
+    opacity:0.75;
+    text-shadow: 0px 0px 29px rgba(163, 255, 153, 1);
+  }
+  
+  2% {
+    opacity:.75;
+    text-shadow: 0px 0px 29px rgba(163, 255, 153, 1);
+  }
+  8% {
+    opacity:0.65;
+    text-shadow: 0px 0px 29px rgba(163, 255, 153, 1);
+  }
+  9% {
+    opacity:.78;
+    text-shadow: 0px 0px 29px rgba(163, 255, 153, 1);
+  }
+  12% {
+    opacity:0.75;
+    text-shadow: 0px 0px 29px rgba(163, 255, 153, 1);
+  }
+  20% {
+    opacity:.7;
+    text-shadow: 0px 0px 29px rgba(163, 255, 153, 1)
+  }
+  25% {
+    opacity:0.75;
+    text-shadow: 0px 0px 29px rgba(163, 255, 153, 1)
+  }
+  30% {
+    opacity:.7;
+    text-shadow: 0px 0px 29px rgba(163, 255, 153, 1)
+  }
+  
+  70% {
+    opacity:0.75;
+    text-shadow: 0px 0px 29px rgba(163, 255, 153, 1)
+  }
+  
+  72% {
+    opacity:0.7;
+    text-shadow:0px 0px 29px rgba(163, 255, 153, 1)
+  }
+  
+  77% {
+    opacity:.75;
+    text-shadow: 0px 0px 29px rgba(163, 255, 153, 1)
+  }
+  100% {
+    opacity:.75;
+    text-shadow: 0px 0px 29px rgba(163, 255, 153, 1)
+  }
+}
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.history.controls = false;
 
-</script><tw-passagedata pid="1" name="CORV_OS" tags="" position="300,200" size="100,100">&lt;&lt;timed .75s&gt;&gt;{{{
+</script><tw-passagedata pid="1" name="CORV_OS" tags="" position="300,200" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;{{{
  ██████  ██████  ██████  ██    ██      ██████  ███████ 
 ██      ██    ██ ██   ██ ██    ██     ██    ██ ██      
 ██      ██    ██ ██████  ██    ██ ███ ██    ██ ███████ 
@@ -343,12 +404,12 @@ H1 {
 
 &lt;&lt;timed 2s&gt;&gt;Lorem ipsum dolor  sit amet, consectetur adipiscing elit. Ut orci felis, tristique a tellus non, semper hendrerit elit. Aliquam sit amet tortor vel diam ullamcorper interdum et a odio. Vivamus quam nibh, placerat vel elementum nec, efficitur quis dolor. Pellentesque fermentum laoreet vestibulum.&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 2.5s&gt;&gt;&lt;p align=&quot;center&quot;&gt;[[Content 1|Content 1]] | [[Content 2|Content 2]] | [[Content 3|Content 3]] | [[Employee Data|Employee Login]] | [[Return to CvP-DOS|Boot 3.5]]&lt;/p&gt; &lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 2.5s&gt;&gt;&lt;p align=&quot;center&quot;&gt;[[Content 1|Content 1]] | [[Content 2|Content 2]] | [[Content 3|Content 3]] | [[Employee Data|Employee Login]] | [[Return to CvP-DOS|Boot 3.5]]&lt;/p&gt; &lt;&lt;/timed&gt;&gt;&lt;/span&gt;
 
 
-</tw-passagedata><tw-passagedata pid="2" name="Content 2" tags="" position="300,350" size="100,100">&lt;&lt;timed .75s&gt;&gt;Semper hendrerit elit. Aliquam sit amet tortor vel diam ullamcorper interdum et a odio. Vivamus quam nibh, placerat vel elementum nec, efficitur quis dolor. Pellentesque fermentum laoreet vestibulum. &lt;&lt;/timed&gt;&gt;
+</tw-passagedata><tw-passagedata pid="2" name="Content 2" tags="" position="300,350" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;Semper hendrerit elit. Aliquam sit amet tortor vel diam ullamcorper interdum et a odio. Vivamus quam nibh, placerat vel elementum nec, efficitur quis dolor. Pellentesque fermentum laoreet vestibulum. &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]] | [[Another Link|Con 2 Sub 1]]&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]] | [[Another Link|Con 2 Sub 1]]&lt;&lt;/timed&gt;&gt;&lt;/span&gt;
 </tw-passagedata><tw-passagedata pid="3" name="Boot 1" tags="" position="200,0" size="100,100">&lt;span id=&quot;flickertemp2&quot;&gt;&lt;&lt;timed .2s&gt;&gt;The IBM Personal Computer DOS&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed .7s&gt;&gt;Version 1.10 (C)Copyright IBM Corp 1981, 1982&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 1.2s&gt;&gt;62940 Bytes free&lt;&lt;/timed&gt;&gt;
@@ -365,7 +426,7 @@ H1 {
 &lt;&lt;timed 18s&gt;&gt;Current time is &lt;&lt;= _now.getHours()&gt;&gt;:&lt;&lt;= _now.getMinutes()&gt;&gt;:27.42 &lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 21s&gt;&gt;&lt;&lt;goto &quot;Boot 3&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;
-</tw-passagedata><tw-passagedata pid="5" name="Boot 3" tags="" position="400,0" size="100,100">&lt;&lt;timed 2s&gt;&gt;Corvus Petra TechServices - IBM PC/XT Model 5160&lt;&lt;/timed&gt;&gt;
+</tw-passagedata><tw-passagedata pid="5" name="Boot 3" tags="" position="400,0" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed 2s&gt;&gt;Corvus Petra TechServices - IBM PC/XT Model 5160&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 4s&gt;&gt;System Specifications:&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 4.2s&gt;&gt;RAM: 640k&lt;&lt;/timed&gt;&gt;
@@ -381,8 +442,8 @@ H1 {
 &lt;&lt;timed 8s&gt;&gt;Installed Applications:&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 8.5s&gt;&gt;[[CORV_OS]] : Corvus Petra Operating System&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 8.9s&gt;&gt;[[EINRNCLC]]: Einstein-Rosen Calculation Utility with disk drive extension&lt;&lt;/timed&gt;&gt;
-&lt;&lt;timed 9.3s&gt;&gt;[[TADN_LOG]]: Temporal Anomaly Detection Network 1.1&lt;&lt;/timed&gt;&gt;
-</tw-passagedata><tw-passagedata pid="6" name="TADN_LOG" tags="" position="1150,100" size="100,100">&lt;&lt;timed .75s&gt;&gt;&lt;img src=&quot;mapscan.gif&quot; class=&quot;map&quot;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 1.75s&gt;&gt;&lt;p align=&quot;center&quot;&gt;[[Return to CvP-DOS|Boot 3.5]] &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[TADN Status]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Archived Anomalies]]&lt;/p&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="StorySubtitle" tags="" position="0,100" size="100,100"></tw-passagedata><tw-passagedata pid="8" name="StoryCaption" tags="" position="0,200" size="100,100">-----
+&lt;&lt;timed 9.3s&gt;&gt;[[TADN_LOG]]: Temporal Anomaly Detection Network 1.1&lt;&lt;/timed&gt;&gt;&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="6" name="TADN_LOG" tags="" position="1150,100" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;&lt;img src=&quot;mapscan.gif&quot; class=&quot;map&quot;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 1.75s&gt;&gt;&lt;p align=&quot;center&quot;&gt;[[Return to CvP-DOS|Boot 3.5]] &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[TADN Status]]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[[Archived Anomalies]]&lt;/p&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="7" name="StorySubtitle" tags="" position="0,100" size="100,100"></tw-passagedata><tw-passagedata pid="8" name="StoryCaption" tags="" position="0,200" size="100,100">-----
 &lt;SPAN STYLE=&quot;font-size:9.5pt&quot;&gt;&lt;p align=&quot;left&quot; &gt;This system is preserved for the express use of Corvus Petra employees and authorized individuals ONLY. This snapshot may contain outdated information or data heretofore invalidated by alterations to temporal flow or continuity.&lt;/p&gt;
 (C) Corvus Petra, 1994
 Internal use only - not for public distribution.
@@ -390,7 +451,7 @@ Internal use only - not for public distribution.
 Legacy
 Operating 
 Environment
-</tw-passagedata><tw-passagedata pid="10" name="Employee Login" tags="" position="700,250" size="100,100">&lt;&lt;set $emplid to &quot;&quot;&gt;&gt;&lt;&lt;set $password to &quot;&quot;&gt;&gt;&lt;&lt;set $clearname to &quot;&quot;&gt;&gt;&lt;&lt;set $jobtitle to &quot;&quot;&gt;&gt;&lt;&lt;set $division to &quot;&quot;&gt;&gt;&lt;&lt;set $emplinfo to &quot;&quot;&gt;&gt;&lt;&lt;set $securitylevel to &quot;&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="10" name="Employee Login" tags="" position="700,250" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;set $emplid to &quot;&quot;&gt;&gt;&lt;&lt;set $password to &quot;&quot;&gt;&gt;&lt;&lt;set $clearname to &quot;&quot;&gt;&gt;&lt;&lt;set $jobtitle to &quot;&quot;&gt;&gt;&lt;&lt;set $division to &quot;&quot;&gt;&gt;&lt;&lt;set $emplinfo to &quot;&quot;&gt;&gt;&lt;&lt;set $securitylevel to &quot;&quot;&gt;&gt;
 &lt;&lt;timed .75s&gt;&gt;Please input a employee ID and password to continue&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 1.25s&gt;&gt;{{{&gt; }}}EMPLID:   &lt;&lt;textbox &quot;$emplid&quot; &quot;&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 1.75s&gt;&gt;{{{&gt; }}}PASSWD: &lt;&lt;textbox &quot;$password&quot; &quot;&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;
@@ -425,15 +486,15 @@ Environment
 &lt;&lt;/button&gt;&gt;
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 3s&gt;&gt;[[Return to CORV-OS|CORV_OS]]&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 3s&gt;&gt;[[Return to CORV-OS|CORV_OS]]&lt;&lt;/timed&gt;&gt;&lt;/span&gt;
 
-</tw-passagedata><tw-passagedata pid="11" name="Content 1" tags="" position="150,350" size="100,100">&lt;&lt;timed .75s&gt;&gt;Semper hendrerit elit. Aliquam sit amet tortor vel diam ullamcorper interdum et a odio. Vivamus quam nibh, placerat vel elementum nec, efficitur quis dolor. Pellentesque fermentum laoreet vestibulum. &lt;&lt;/timed&gt;&gt;
+</tw-passagedata><tw-passagedata pid="11" name="Content 1" tags="" position="150,350" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;Semper hendrerit elit. Aliquam sit amet tortor vel diam ullamcorper interdum et a odio. Vivamus quam nibh, placerat vel elementum nec, efficitur quis dolor. Pellentesque fermentum laoreet vestibulum. &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]] | [[Another Link|Con 1 Sub 1]]&lt;&lt;/timed&gt;&gt;
-</tw-passagedata><tw-passagedata pid="12" name="Content 3" tags="" position="450,350" size="100,100">&lt;&lt;timed .75s&gt;&gt;Semper hendrerit elit. Aliquam sit amet tortor vel diam ullamcorper interdum et a odio. Vivamus quam nibh, placerat vel elementum nec, efficitur quis dolor. Pellentesque fermentum laoreet vestibulum. &lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]] | [[Another Link|Con 1 Sub 1]]&lt;&lt;/timed&gt;&gt;&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="12" name="Content 3" tags="" position="450,350" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;Semper hendrerit elit. Aliquam sit amet tortor vel diam ullamcorper interdum et a odio. Vivamus quam nibh, placerat vel elementum nec, efficitur quis dolor. Pellentesque fermentum laoreet vestibulum. &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]] | [[Another Link|Con 3 Sub 1]]&lt;&lt;/timed&gt;&gt;
-</tw-passagedata><tw-passagedata pid="13" name="Con 1 Sub 1" tags="" position="150,500" size="100,100">&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="Invalid User" tags="" position="900,250" size="100,100">&lt;&lt;timed .5s&gt;&gt;&lt;span class=&quot;blink&quot;&gt;**ERROR: Unrecognized Credentials**&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]] | [[Another Link|Con 3 Sub 1]]&lt;&lt;/timed&gt;&gt;&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="13" name="Con 1 Sub 1" tags="" position="150,500" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]]&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="14" name="Invalid User" tags="" position="900,250" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .5s&gt;&gt;&lt;span class=&quot;blink&quot;&gt;**ERROR: Unrecognized Credentials**&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 1.75s&gt;&gt;Please confirm your login information and reenter at [[login screen|Employee Login]].&lt;&lt;/timed&gt;&gt;
 
@@ -441,8 +502,8 @@ Environment
 
 &lt;&lt;timed 4.5s&gt;&gt;Access to this system is restricted to authorized users only. Unauthorized access, use, or modification of this system or of data contained herein, or in transit to/from this system, may constitute a violation of section 1030 of title 18 of the U.S. Code and other criminal laws. Anyone who accesses this computer system without authorization or exceeds access authority, or obtains, alters, damages, destroys, or discloses information, or prevents authorized use of information on the computer system, may be subject to penalties, fines or imprisonment. This computer system and any related equipment is subject to monitoring for administrative oversight, law enforcement, criminal investigative purposes, inquiries into alleged wrongdoing or misuse, and to ensure proper performance of applicable security features and procedures. Corvus Petra may conduct monitoring activities without further notice.&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 12s&gt;&gt;&lt;&lt;goto &quot;Employee Login&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;
-</tw-passagedata><tw-passagedata pid="15" name="Con 2 Sub 1" tags="" position="300,500" size="100,100">&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Con 3 Sub 1" tags="" position="450,500" size="100,100">&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Archived Anomalies" tags="" position="1225,250" size="100,100">&lt;&lt;timed .75s&gt;&gt;&lt;p align=&quot;center&quot;&gt;[[Return to TADN_LOG Interface|TADN_LOG]]&lt;/p&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Boot 3.5" tags="" position="450,100" size="100,100">&lt;&lt;timed 1s&gt;&gt;Corvus Petra TechServices - IBM PC/XT Model 5160&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 12s&gt;&gt;&lt;&lt;goto &quot;Employee Login&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="15" name="Con 2 Sub 1" tags="" position="300,500" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]]&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="16" name="Con 3 Sub 1" tags="" position="450,500" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]]&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="17" name="Archived Anomalies" tags="" position="1225,250" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;&lt;p align=&quot;center&quot;&gt;[[Return to TADN_LOG Interface|TADN_LOG]]&lt;/p&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="18" name="Boot 3.5" tags="" position="450,100" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed 1s&gt;&gt;Corvus Petra TechServices - IBM PC/XT Model 5160&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 2s&gt;&gt;System Specifications:
 RAM: 640k
@@ -458,7 +519,7 @@ Implementing CvP-DOS graphical user interface&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 3.5s&gt;&gt;Installed Applications:
 [[CORV_OS]] : Corvus Petra Operating System
 [[EINRNCLC]]: Einstein-Rosen Calculation Utility with disk drive extension
-[[TADN_LOG]]: Temporal Anomaly Detection Network 1.1&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="BBS" tags="" position="900,400" size="100,100">&lt;&lt;timed .75s&gt;&gt;{{{
+[[TADN_LOG]]: Temporal Anomaly Detection Network 1.1&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="19" name="BBS" tags="" position="900,400" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;{{{
    _____ _____    ____  ____   _____ 
   / ____|  __ \  |  _ \|  _ \ / ____|
  | |    | |__) | | |_) | |_) | (___  
@@ -519,8 +580,8 @@ Implementing CvP-DOS graphical user interface&lt;&lt;/timed&gt;&gt;
             shadow: 0px 0px 20px #000000ff;
 			text-align:left;
 			padding:3px;
-		}&lt;/style&gt;
-</tw-passagedata><tw-passagedata pid="20" name="TADN Status" tags="" position="1075,250" size="100,100">&lt;&lt;timed .75s&gt;&gt;&lt;p align=&quot;center&quot;&gt;[[Return to TADN_LOG Interface|TADN_LOG]]&lt;/p&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="EINRNCLC" tags="" position="800,100" size="100,100">&lt;&lt;timed .5s&gt;&gt;Einstein-Rosen Calculation Utility 2.3 | [[Return to CvP-DOS|Boot 3.5]]&lt;&lt;/timed&gt;&gt;
+		}&lt;/style&gt;&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="20" name="TADN Status" tags="" position="1075,250" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;&lt;p align=&quot;center&quot;&gt;[[Return to TADN_LOG Interface|TADN_LOG]]&lt;/p&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="21" name="EINRNCLC" tags="" position="800,100" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .5s&gt;&gt;Einstein-Rosen Calculation Utility 2.3 | [[Return to CvP-DOS|Boot 3.5]]&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed .8s&gt;&gt;This utility is designed to plot both temporal and spatial targeting coordinates for use in projection equipment. Please see operations manual for proper format and content of input targeting data.&lt;&lt;/timed&gt;&gt;
 
@@ -540,7 +601,7 @@ Implementing CvP-DOS graphical user interface&lt;&lt;/timed&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;\
 &lt;&lt;/timed&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;\
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="Employee Page" tags="" position="700,400" size="100,100">&lt;&lt;timed .75s&gt;&gt;NAME:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;&lt;print $clearname&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="22" name="Employee Page" tags="" position="700,400" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;NAME:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;&lt;print $clearname&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 1.25s&gt;&gt;EMPLID:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;&lt;print $emplid&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 1.75s&gt;&gt;TITLE:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;&lt;print $jobtitle&gt;&gt;&lt;&lt;/timed&gt;&gt;
@@ -548,7 +609,7 @@ Implementing CvP-DOS graphical user interface&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 2.75s&gt;&gt;&lt;&lt;print $emplinfo&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 3.25s&gt;&gt; [[Return to CORV-OS|CORV_OS]] | [[Employee BBS|BBS]] | [[Payroll]] |[[Log out|Employee Login]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Payroll" tags="" position="700,550" size="100,100">&lt;&lt;timed .75s&gt;&gt;NAME:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;&lt;print $clearname&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 3.25s&gt;&gt; [[Return to CORV-OS|CORV_OS]] | [[Employee BBS|BBS]] | [[Payroll]] |[[Log out|Employee Login]]&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="23" name="Payroll" tags="" position="700,550" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;NAME:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;&lt;print $clearname&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 1.25s&gt;&gt;EMPLID:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;&lt;print $emplid&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 1.75s&gt;&gt;CLEARANCE:&amp;nbsp;&amp;nbsp;&lt;&lt;print $securitylevel&gt;&gt;&lt;&lt;/timed&gt;&gt;
@@ -556,7 +617,7 @@ Implementing CvP-DOS graphical user interface&lt;&lt;/timed&gt;&gt;
 RATE:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span class=&quot;blink&quot;&gt;NO DATA - Unable to reach HR server&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 
-&lt;&lt;timed 3.75s&gt;&gt;&lt;&lt;return &quot;Return to employee page&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="Removed content" tags="" position="900,550" size="100,100">&lt;&lt;timed .75s&gt;&gt;{{{
+&lt;&lt;timed 3.75s&gt;&gt;&lt;&lt;return &quot;Return to employee page&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="24" name="Removed content" tags="" position="900,550" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;{{{
    _____ _____    ____  ____   _____ 
   / ____|  __ \  |  _ \|  _ \ / ____|
  | |    | |__) | | |_) | |_) | (___  
@@ -618,7 +679,7 @@ RATE:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span class
             shadow: 0px 0px 20px #000000ff;
 			text-align:left;
 			padding:3px;
-		}&lt;/style&gt;
+		}&lt;/style&gt;&lt;/span&gt;
 
 </tw-passagedata><tw-passagedata pid="25" name="Flicker Test" tags="" position="1075,400" size="100,100">&lt;div id=&quot;text&quot;&gt;
 &lt;span id=&quot;flickertemp&quot;&gt;Flicker Temp&lt;/span&gt;
@@ -626,7 +687,7 @@ RATE:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span class
 &lt;span id=&quot;flicker2&quot;&gt;Flicker 2&lt;/span&gt;
 &lt;span id=&quot;flicker3&quot;&gt;Flicker 3&lt;/span&gt;
 &lt;span id=&quot;flicker4&quot;&gt;Flicker 4&lt;/span&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Untitled Passage" tags="" position="1075,550" size="100,100">&lt;&lt;set $now to new Date()&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Untitled Passage" tags="" position="1075,550" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;set $now to new Date()&gt;&gt;
 
 
 
@@ -642,7 +703,7 @@ Second: &lt;&lt;= $now.getSeconds()&gt;&gt;
 Your local time:&lt;&lt;set $CurDate = new Date(Date.now())&gt;&gt;
 &lt;&lt;= $CurDate.toLocaleString(&quot;en-US&quot;, { weekday: &quot;long&quot;, month: &quot;short&quot;, day: &quot;numeric&quot;, year: &quot;numeric&quot;, hour: &quot;numeric&quot;, minute: &quot;2-digit&quot; } )&gt;&gt;
 
-&lt;&lt;= $CurDate.getDay(&quot;long&quot;)&gt;&gt;
+&lt;&lt;= $CurDate.getDay(&quot;long&quot;)&gt;&gt;&lt;/span&gt;
 
 </tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
