@@ -213,6 +213,9 @@ H1 {
   animation: text-flicker 3s;
 }
 
+#flickertemp3 {
+  animation: text-flicker 2s 3;
+}
 
 
 #flicker1 {
@@ -447,8 +450,7 @@ H1 {
 &lt;SPAN STYLE=&quot;font-size:9.5pt&quot;&gt;&lt;p align=&quot;left&quot; &gt;This system is preserved for the express use of Corvus Petra employees and authorized individuals ONLY. This snapshot may contain outdated information or data heretofore invalidated by alterations to temporal flow or continuity.&lt;/p&gt;
 (C) Corvus Petra, 1994
 Internal use only - not for public distribution.
-&lt;/span&gt;
-&lt;p align=&quot;center&quot;&gt;State:
+&lt;/span&gt;&lt;p align=&quot;center&quot;&gt;State:
 &lt;&lt;if $doom is 1&gt;&gt;Unstable
 &lt;&lt;elseif $doom is 2&gt;&gt;Failing
 &lt;&lt;elseif $doom is 3&gt;&gt;Critical
@@ -505,29 +507,31 @@ Environment
 
 &lt;&lt;timed 1.75s&gt;&gt;Please confirm your login information and reenter at [[login screen|Employee Login]].&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 3s&gt;&gt;If you believe you have &lt;span id=&quot;flicker1&quot;&gt;r&lt;/span&gt;eceived this message &lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;i&lt;/span&gt;&lt;&lt;else&gt;&gt;i&lt;&lt;/if&gt;&gt;n error, contact Corvus Petra human resources department.&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 3s&gt;&gt;If you believe you have received this message is in error, contact Corvus Petra human resources department.&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 4.5s&gt;&gt;Access to this system is restricte&lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker3&quot;&gt;d&lt;/span&gt;&lt;&lt;else&gt;&gt;d&lt;&lt;/if&gt;&gt; to authorize&lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker4&quot;&gt;d&lt;/span&gt;&lt;&lt;else&gt;&gt;d&lt;&lt;/if&gt;&gt; users only. Unauthorized access, use, contro&lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;l&lt;/span&gt;&lt;&lt;else&gt;&gt;l&lt;&lt;/if&gt;&gt;, or modification of this syst&lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;e&lt;/span&gt;&lt;&lt;else&gt;&gt;e&lt;&lt;/if&gt;&gt;m or of data contained herein, or in transit to/from this system, may constitute a violation of section 1030 of title 18 of the U.S. Code and other criminal laws. Anyone who accesses this com&lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker3&quot;&gt;p&lt;/span&gt;&lt;&lt;else&gt;&gt;p&lt;&lt;/if&gt;&gt;uter system without &lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker4&quot;&gt;a&lt;/span&gt;&lt;&lt;else&gt;&gt;a&lt;&lt;/if&gt;&gt;uthorization or exceeds acce&lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;ss&lt;/span&gt;&lt;&lt;else&gt;&gt;ss&lt;&lt;/if&gt;&gt; authority, or obtains, &lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;w&lt;/span&gt;&lt;&lt;else&gt;&gt;w&lt;&lt;/if&gt;&gt;ithdraws, alters, damages, destr&lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker3&quot;&gt;o&lt;/span&gt;&lt;&lt;else&gt;&gt;o&lt;&lt;/if&gt;&gt;ys, or discloses info&lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker4&quot;&gt;r&lt;/span&gt;&lt;&lt;else&gt;&gt;r&lt;&lt;/if&gt;&gt;mation, or prevents authorize&lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;d&lt;/span&gt;&lt;&lt;else&gt;&gt;d&lt;&lt;/if&gt;&gt; use of information on the computer system, may be subject to penalties, fines or imprisonment. This &lt;&lt;if $doom gt 2&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;C&lt;/span&gt;&lt;&lt;else&gt;&gt;C&lt;&lt;/if&gt;&gt;omputer system and any related equipment is subject too monitoring for administrative &lt;&lt;if $doom gt 2&gt;&gt;&lt;span id=&quot;flicker3&quot;&gt;o&lt;/span&gt;&lt;&lt;else&gt;&gt;o&lt;&lt;/if&gt;&gt;versight, law enforcement, c&lt;&lt;if $doom gt 2&gt;&gt;&lt;span id=&quot;flicker4&quot;&gt;r&lt;/span&gt;&lt;&lt;else&gt;&gt;r&lt;&lt;/if&gt;&gt;iminal in&lt;&lt;if $doom gt 2&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;v&lt;/span&gt;&lt;&lt;else&gt;&gt;v&lt;&lt;/if&gt;&gt;estigative purposes, inquiries &lt;&lt;if $doom gt 2&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;i&lt;/span&gt;&lt;&lt;else&gt;&gt;i&lt;&lt;/if&gt;&gt;nto allege&lt;&lt;if $doom gt 2&gt;&gt;&lt;span id=&quot;flicker3&quot;&gt;d&lt;/span&gt;&lt;&lt;else&gt;&gt;d&lt;&lt;/if&gt;&gt; wrongdoing or misuse, and to ensure proper perform&lt;&lt;if $doom gt 2&gt;&gt;&lt;span id=&quot;flicker4&quot;&gt;a&lt;/span&gt;&lt;&lt;else&gt;&gt;a&lt;&lt;/if&gt;&gt;nce of applicabl&lt;&lt;if $doom gt 2&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;e&lt;/span&gt;&lt;&lt;else&gt;&gt;e&lt;&lt;/if&gt;&gt; &lt;&lt;if $doom gt 3&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;S&lt;/span&gt;&lt;&lt;else&gt;&gt;S&lt;&lt;/if&gt;&gt;ecurity features and proc&lt;&lt;if $doom gt 3&gt;&gt;&lt;span id=&quot;flicker3&quot;&gt;e&lt;/span&gt;&lt;&lt;else&gt;&gt;e&lt;&lt;/if&gt;&gt;dures. Cor&lt;&lt;if $doom gt 3&gt;&gt;&lt;span id=&quot;flicker4&quot;&gt;v&lt;/span&gt;&lt;&lt;else&gt;&gt;v&lt;&lt;/if&gt;&gt;us Petra may conduct monitoring activiti&lt;&lt;if $doom gt 3&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;e&lt;/span&gt;&lt;&lt;else&gt;&gt;e&lt;&lt;/if&gt;&gt;s without further &lt;&lt;if $doom gt 3&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;n&lt;/span&gt;&lt;&lt;else&gt;&gt;n&lt;&lt;/if&gt;&gt;otice.&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 4.5s&gt;&gt;Access to this system is restricted to authorized users only. Unauthorized access, use, control, or modification of this system or of data contained herein, or in transit to/from this system, may constitute a violation of section 1030 of title 18 of the U.S. Code and other criminal laws. Anyone who accesses this computer system without authorization or exceeds access authority, or obtains, withdraws, alters, damages, destroys, or discloses information, or prevents authorized&gt; use of information on the computer system, may be subject to penalties, fines or imprisonment. This computer system and any related equipment is subject too monitoring for administrative oversight, law enforcement, criminal investigative purposes, inquiries into alleged wrongdoing or misuse, and to ensure proper performance of applicable Security features and procedures. Corvus Petra may conduct monitoring activities without further notice.&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 24s&gt;&gt;&lt;&lt;if $doom gt 3&gt;&gt;&lt;&lt;goto&quot;Shutdown&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
-&lt;&lt;timed 25s&gt;&gt;&lt;&lt;goto &quot;Employee Login&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;
-</tw-passagedata><tw-passagedata pid="15" name="Con 2 Sub 1" tags="" position="300,500" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]]&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="16" name="Con 3 Sub 1" tags="" position="450,500" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]]&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="17" name="Archived Anomalies" tags="" position="1225,250" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;&lt;p align=&quot;center&quot;&gt;[[Return to TADN_LOG Interface|TADN_LOG]]&lt;/p&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="18" name="Boot 3.5" tags="" position="450,100" size="100,100">&lt;&lt;if $doom gt 3&gt;&gt;&lt;&lt;goto&quot;Shutdown&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed 1s&gt;&gt;Corvu&lt;&lt;if $doom is 1&gt;&gt;&lt;span id=&quot;flicker3&quot;&gt;s&lt;/span&gt;&lt;&lt;else&gt;&gt;s&lt;&lt;/if&gt;&gt;Petra TechServices - IBM PC/XT Mod&lt;&lt;if $doom is 1&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;e&lt;/span&gt;&lt;&lt;else&gt;&gt;e&lt;&lt;/if&gt;&gt;l 5160&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 12s&gt;&gt;&lt;&lt;if $doom is 1&gt;&gt;Warning: buffer overrun. Potential security vulnerability detected.&lt;&lt;elseif $doom is 2&gt;&gt;Warning: buffer overrun. Data leak at entry: “Riddle, Emmet.”&lt;&lt;elseif $doom is 3&gt;&gt;Warning: buffer overrun. 636F72766964616537&lt;&lt;elseif $doom is 4&gt;&gt;&lt;&lt;goto &quot;Shutdown&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 16s&gt;&gt;&lt;&lt;goto &quot;Employee Login&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="15" name="Con 2 Sub 1" tags="" position="300,500" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]]&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="16" name="Con 3 Sub 1" tags="" position="450,500" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed 1.75s&gt;&gt;[[Return to CORV-OS|CORV_OS]]&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="17" name="Archived Anomalies" tags="" position="1225,250" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;&lt;p align=&quot;center&quot;&gt;[[Return to TADN_LOG Interface|TADN_LOG]]&lt;/p&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="18" name="Boot 3.5" tags="" position="450,100" size="100,100">&lt;&lt;if $doom gt 3&gt;&gt;&lt;&lt;goto&quot;Shutdown&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;span id=&quot;softflicker&quot;&gt;
+&lt;&lt;timed 1s&gt;&gt;Corvu&lt;&lt;if $doom is 3&gt;&gt;&lt;span id=&quot;flicker3&quot;&gt;s&lt;/span&gt;&lt;&lt;else&gt;&gt;s&lt;&lt;/if&gt;&gt;Petra TechServices - IBM PC/XT Mod&lt;&lt;if $doom is 3&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;e&lt;/span&gt;&lt;&lt;else&gt;&gt;e&lt;&lt;/if&gt;&gt;l 5160&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 2s&gt;&gt;System Spe&lt;&lt;if $doom is 1&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;c&lt;/span&gt;&lt;&lt;else&gt;&gt;c&lt;&lt;/if&gt;&gt;ifications:
+&lt;&lt;timed 2s&gt;&gt;System Spe&lt;&lt;if $doom is 3&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;c&lt;/span&gt;&lt;&lt;else&gt;&gt;c&lt;&lt;/if&gt;&gt;ifications:
 RAM: 640k
 Hard Disk: 20 MB (BIOS Type 13)
-Video Card: Hercules Monochrome Graphics (MDA compatible)
-Floppy Drive A: 5.25” 360k do&lt;&lt;if $doom is 1&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;u&lt;/span&gt;&lt;&lt;else&gt;&gt;u&lt;&lt;/if&gt;&gt;ble-sided, double-density
-Floppy D&lt;&lt;if $doom is 1&gt;&gt;&lt;span id=&quot;flicker3&quot;&gt;r&lt;/span&gt;&lt;&lt;else&gt;&gt;r&lt;&lt;/if&gt;&gt;ive B:  3.5” 720k double-sided, double-dens&lt;&lt;if $doom is 1&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;i&lt;/span&gt;&lt;&lt;else&gt;&gt;i&lt;&lt;/if&gt;&gt;ty
-HCI Input: Logi&lt;&lt;if $doom is 1&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;t&lt;/span&gt;&lt;&lt;else&gt;&gt;t&lt;&lt;/if&gt;&gt;ech P4 compatible pointing device . . .enabled.&lt;&lt;/timed&gt;&gt;
+Video Card: Hercu&lt;&lt;if $doom is 2&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;l&lt;/span&gt;&lt;&lt;else&gt;&gt;l&lt;&lt;/if&gt;&gt;es Monochrome Graphics (MDA compatible)
+Floppy Drive A: 5.25” 360k do&lt;&lt;if $doom is 3&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;u&lt;/span&gt;&lt;&lt;else&gt;&gt;u&lt;&lt;/if&gt;&gt;ble-sided, double-d&lt;&lt;if $doom is 2&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;e&lt;/span&gt;&lt;&lt;else&gt;&gt;e&lt;&lt;/if&gt;&gt;nsity
+Floppy D&lt;&lt;if $doom is 3&gt;&gt;&lt;span id=&quot;flicker3&quot;&gt;r&lt;/span&gt;&lt;&lt;else&gt;&gt;r&lt;&lt;/if&gt;&gt;ive B:  3.5” 720k double-sided, double-dens&lt;&lt;if $doom is 3&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;i&lt;/span&gt;&lt;&lt;else&gt;&gt;i&lt;&lt;/if&gt;&gt;ty
+HCI Input: Logi&lt;&lt;if $doom is 3&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;t&lt;/span&gt;&lt;&lt;else&gt;&gt;t&lt;&lt;/if&gt;&gt;ech P4 compatible pointing de&lt;&lt;if $doom is 2&gt;&gt;&lt;span id=&quot;flicker3&quot;&gt;v&lt;/span&gt;&lt;&lt;else&gt;&gt;v&lt;&lt;/if&gt;&gt;ice . . .enabled.&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 2.5s&gt;&gt;Overriding command line interface
-Implementing CvP-DOS graphical user interface&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 2.5s&gt;&gt;Overriding command lin&lt;&lt;if $doom is 2&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;e&lt;/span&gt;&lt;&lt;else&gt;&gt;e&lt;&lt;/if&gt;&gt; interface
+Implementing CvP-DOS graphica&lt;&lt;if $doom is 2&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;l&lt;/span&gt;&lt;&lt;else&gt;&gt;l&lt;&lt;/if&gt;&gt; user interface&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 3.5s&gt;&gt;Installed Applications:
 [[CORV_OS]] : Corvus Petra Operating System
-[[EINRNCLC]]: Einstein-Rosen Calculation Utilit&lt;&lt;if $doom is 1&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;y&lt;/span&gt;&lt;&lt;else&gt;&gt;y&lt;&lt;/if&gt;&gt; with disk drive extension
-[[TADN_LOG]]: Temporal Anomaly Detection Network 1.1&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="19" name="BBS" tags="" position="900,400" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;{{{
+[[EINRNCLC]]: Einstein-Rosen Calculation Utilit&lt;&lt;if $doom is 3&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;y&lt;/span&gt;&lt;&lt;else&gt;&gt;y&lt;&lt;/if&gt;&gt; with disk drive extension
+[[TADN_LOG]]: Temporal Anomaly Detection Network 1.1&lt;&lt;/timed&gt;&gt;
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="19" name="BBS" tags="" position="900,400" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;{{{
    _____ _____    ____  ____   _____ 
   / ____|  __ \  |  _ \|  _ \ / ____|
  | |    | |__) | | |_) | |_) | (___  
@@ -591,9 +595,11 @@ Implementing CvP-DOS graphical user interface&lt;&lt;/timed&gt;&gt;
 		}&lt;/style&gt;&lt;/span&gt;
 </tw-passagedata><tw-passagedata pid="20" name="TADN Status" tags="" position="1075,250" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;&lt;p align=&quot;center&quot;&gt;[[Return to TADN_LOG Interface|TADN_LOG]]&lt;/p&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="21" name="EINRNCLC" tags="" position="800,100" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .5s&gt;&gt;Einstein-Rosen Calculation Utility 2.3 | [[Return to CvP-DOS|Boot 3.5]]&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed .8s&gt;&gt;This utility is designed to plot both &lt;&lt;if $doom gt 0&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;temporal and spatial&lt;/span&gt;&lt;&lt;else&gt;&gt;temporal and spatial&lt;&lt;/if&gt;&gt; targeting coordinates for use in projection equipment. Please see operations manual for proper format and content of input targeting data.&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed .8s&gt;&gt;This utility is designed to plot both temporal and spatial targeting coordinates for use in projection equipment. Please see operations manual for proper format and content of input targeting data.&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 1.3s&gt;&gt;NOTE: Though based on research by &lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;Hubert M. Thaxton&lt;/span&gt;&lt;&lt;else&gt;&gt;Hubert M. Thaxton&lt;&lt;/if&gt;&gt;  (1957) and Nathan Rosen (1940, 1958), the algorythm this targeting system utilizes is protected. (C)Copyright Corvus Petra Software Ltd., 1986. By order of Congress this software is only to be used in cooperation with and on equipment owned by Federal authorities.&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1.3s&gt;&gt;NOTE: Though based on research by Hubert M. Thaxton  (1957) and Nathan Rosen (1940, 1958), the algorythm this targeting system utilizes is protected. (C)Copyright Corvus Petra Software Ltd., 1986. By order of Congress this software is &lt;&lt;if $doom gt 2&gt;&gt;&lt;span id=&quot;flicker3&quot;&gt;only to be used in cooperation with&lt;/span&gt;&lt;&lt;else&gt;&gt;only to be used in cooperation with&lt;&lt;/if&gt;&gt; and on equipment owned by Federal authorities.&lt;&lt;/timed&gt;&gt;
+
+&lt;&lt;timed 2s&gt;&gt;Initiating this system performs ping-tests on temporal beacons in a variety of eras. Failing to complete calculation &lt;&lt;if $doom gt 0&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;may lead&lt;/span&gt;&lt;&lt;else&gt;&gt;may lead&lt;&lt;/if&gt;&gt; &lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;to temporal disruption&lt;/span&gt;&lt;&lt;else&gt;&gt;to temporal disruption&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 3s&gt;&gt;Please insert diskette with targeting data and lock drive.
 &lt;&lt;linkreplace &quot;(Confirm and Continue)&quot; t8n&gt;&gt;\&lt;&lt;timed 1.5s&gt;&gt;Reading data&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 2.5s&gt;&gt; .&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 3.5s&gt;&gt; .&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 4.5s&gt;&gt; .&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 6.5s&gt;&gt;READ FAIL&lt;&lt;/timed&gt;&gt;&lt;br/&gt;
@@ -604,16 +610,7 @@ Implementing CvP-DOS graphical user interface&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 16.5s&gt;&gt;Terminating program&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 18.5s&gt;&gt; .&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 20.5s&gt;&gt; .&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 22.5s&gt;&gt; .&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 24.1s&gt;&gt;
 \&lt;&lt;goto&quot;Boot 3.5&quot;&gt;&gt;
-\&lt;&lt;/timed&gt;&gt;
-
-&lt;&lt;/linkreplace&gt;&gt;\
-&lt;&lt;/timed&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;\
-&lt;&lt;/timed&gt;&gt;&lt;/span&gt;
-
-
-
-</tw-passagedata><tw-passagedata pid="22" name="Employee Page" tags="" position="700,400" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;NAME:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;&lt;print $clearname&gt;&gt;&lt;&lt;/timed&gt;&gt;
+\&lt;&lt;/timed&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;\&lt;&lt;/timed&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;\&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="22" name="Employee Page" tags="" position="700,400" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;NAME:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;&lt;print $clearname&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 1.25s&gt;&gt;EMPLID:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;&lt;print $emplid&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 1.75s&gt;&gt;TITLE:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;&lt;print $jobtitle&gt;&gt;&lt;&lt;/timed&gt;&gt;
