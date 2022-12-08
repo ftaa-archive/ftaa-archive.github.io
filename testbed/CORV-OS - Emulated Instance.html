@@ -410,7 +410,7 @@ body {
 
 &lt;&lt;timed 2s&gt;&gt;Lorem ipsum dolor  sit amet, consectetur adipiscing elit. Ut orci felis, tristique a tellus non, semper hendrerit elit. Aliquam sit amet tortor vel diam ullamcorper interdum et a odio. Vivamus quam nibh, placerat vel elementum nec, efficitur quis dolor. Pellentesque fermentum laoreet vestibulum.&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 2.5s&gt;&gt;&lt;p align=&quot;center&quot;&gt;&lt;&lt;if $securitylevel is &quot;Level 3&quot;&gt;&gt;[[Removed content]] | &lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;[[Press Relations]] | [[Human Resources]] | &lt;&lt;if $emplid is &quot;&quot;&gt;&gt;[[Employee Data|Employee Login]]&lt;&lt;else&gt;&gt;[[Employee Data|Employee Page]]&lt;&lt;/if&gt;&gt; | [[Return to CvP-DOS|Boot 3.5]]&lt;/p&gt; &lt;&lt;/timed&gt;&gt;&lt;/span&gt;
+&lt;&lt;timed 2.5s&gt;&gt;&lt;p align=&quot;center&quot;&gt;&lt;&lt;if $securitylevel gt 0&gt;&gt;[[Removed content]] | &lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;[[Press Relations]] | [[Human Resources]] | &lt;&lt;if $emplid is &quot;&quot;&gt;&gt;[[Employee Data|Employee Login]]&lt;&lt;else&gt;&gt;[[Employee Data|Employee Page]]&lt;&lt;/if&gt;&gt; | [[Return to CvP-DOS|Boot 3.5]]&lt;/p&gt; &lt;&lt;/timed&gt;&gt;&lt;/span&gt;
 
 
 </tw-passagedata><tw-passagedata pid="2" name="Press Relations" tags="" position="450,450" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;Semper hendrerit elit. Aliquam sit amet tortor vel diam ullamcorper interdum et a odio. Vivamus quam nibh, placerat vel elementum nec, efficitur quis dolor. Pellentesque fermentum laoreet vestibulum. &lt;&lt;/timed&gt;&gt;
@@ -493,14 +493,14 @@ Environment
 			&lt;&lt;set $jobtitle to &quot;&quot;&gt;&gt;
 			&lt;&lt;set $division to &quot;&quot;&gt;&gt;
             &lt;&lt;set $emplinfo to &quot;&quot;&gt;&gt;
-            &lt;&lt;set $securitylevel to &quot;&quot;&gt;&gt;
+            &lt;&lt;set $securitylevel to &gt;&gt;
 			&lt;&lt;goto &quot;Employee Page&quot;&gt;&gt;
 		&lt;&lt;elseif $emplid is &quot;user3&quot; and $password is &quot;user3&quot;&gt;&gt;
 			&lt;&lt;set $clearname to &quot;Riddle, Emmet&quot;&gt;&gt;
 			&lt;&lt;set $jobtitle to &quot;Associate Vice President&quot;&gt;&gt;
 			&lt;&lt;set $division to &quot;Practical Temporal Valuation + Investment&quot;&gt;&gt;
 			&lt;&lt;set $emplinfo to &quot;&quot;&gt;&gt;
-            &lt;&lt;set $securitylevel to &quot;Level 5&quot;&gt;&gt;
+            &lt;&lt;set $securitylevel to 5&gt;&gt;
             &lt;&lt;goto &quot;Employee Page&quot;&gt;&gt;
 		&lt;&lt;else&gt;&gt;
 			&lt;&lt;set $doom++&gt;&gt;
@@ -594,7 +594,7 @@ Implementing CvP-DOS graphica&lt;&lt;if $doom is 2&gt;&gt;&lt;span id=&quot;flic
             			&lt;tr&gt;
 				&lt;td&gt;Name, &lt;br/&gt;01/01/1986&lt;/td&gt;
 				&lt;td&gt;&amp;nbsp;&lt;/td&gt;
-				&lt;td&gt;01/01/1986&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 2.5s&gt;&gt;[[Return to employee page|Employee Page]] | [[Log out|Employee Login]]&lt;&lt;if $securitylevel is &quot;Level 5&quot;&gt;&gt; | [[Removed content]]&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
+				&lt;td&gt;01/01/1986&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 2.5s&gt;&gt;[[Return to employee page|Employee Page]] | [[Log out|Employee Login]]&lt;&lt;if $securitylevel gt 4&gt;&gt; | [[Removed content]]&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/timed&gt;&gt;
 
 
 &lt;style&gt;		table {
