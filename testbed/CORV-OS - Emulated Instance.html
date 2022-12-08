@@ -395,7 +395,9 @@ H1 {
   }
 }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.history.controls = false;
+body {
+  overflow: hidden; /* Hide Scrollbars */
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.history.controls = false;
 
 </script><tw-passagedata pid="1" name="CORV_OS" tags="" position="500,250" size="100,100">&lt;&lt;if $doom gt 3&gt;&gt;&lt;&lt;goto&quot;Shutdown&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;{{{
  ██████  ██████  ██████  ██    ██      ██████  ███████ 
@@ -713,13 +715,13 @@ RATE:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span class
 			padding:3px;
 		}&lt;/style&gt;&lt;/span&gt;
 
-</tw-passagedata><tw-passagedata pid="22" name="Flicker Test" tags="" position="1075,400" size="100,100">&lt;div id=&quot;text&quot;&gt;
+</tw-passagedata><tw-passagedata pid="22" name="Flicker Test" tags="" position="950,750" size="100,100">&lt;div id=&quot;text&quot;&gt;
 &lt;span id=&quot;flickertemp&quot;&gt;Flicker Temp&lt;/span&gt;
 &lt;span id=&quot;flicker1&quot;&gt;Flicker 1&lt;/span&gt;
 &lt;span id=&quot;flicker2&quot;&gt;Flicker 2&lt;/span&gt;
 &lt;span id=&quot;flicker3&quot;&gt;Flicker 3&lt;/span&gt;
 &lt;span id=&quot;flicker4&quot;&gt;Flicker 4&lt;/span&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Untitled Passage" tags="" position="1075,550" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;set $now to new Date()&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Untitled Passage" tags="" position="800,750" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;set $now to new Date()&gt;&gt;
 
 
 
@@ -737,7 +739,7 @@ Your local time:&lt;&lt;set $CurDate = new Date(Date.now())&gt;&gt;
 
 &lt;&lt;= $CurDate.getDay(&quot;long&quot;)&gt;&gt;&lt;/span&gt;
 
-</tw-passagedata><tw-passagedata pid="24" name="1" tags="" position="800,800" size="100,100">&lt;&lt;set $doom to 0&gt;&gt;&lt;&lt;goto &quot;2&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="2" tags="" position="950,800" size="100,100">&lt;&lt;if $doom gt 0&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;Doom 1&lt;/span&gt;&lt;&lt;else&gt;&gt;Doom 1&lt;&lt;/if&gt;&gt;
+</tw-passagedata><tw-passagedata pid="24" name="1" tags="" position="800,900" size="100,100">&lt;&lt;set $doom to 0&gt;&gt;&lt;&lt;goto &quot;2&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="2" tags="" position="950,900" size="100,100">&lt;&lt;if $doom gt 0&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;Doom 1&lt;/span&gt;&lt;&lt;else&gt;&gt;Doom 1&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $doom gt 1&gt;&gt;&lt;span id=&quot;flicker2&quot;&gt;Doom 2&lt;/span&gt;&lt;&lt;else&gt;&gt;Doom 2&lt;&lt;/if&gt;&gt;
 
@@ -745,7 +747,7 @@ Your local time:&lt;&lt;set $CurDate = new Date(Date.now())&gt;&gt;
 
 &lt;&lt;if $doom gt 3&gt;&gt;&lt;&lt;goto&quot;Shutdown&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt; 
 
-[[3]]</tw-passagedata><tw-passagedata pid="26" name="3" tags="" position="1100,800" size="100,100">&lt;&lt;set $doom++&gt;&gt;&lt;&lt;goto &quot;2&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Shutdown" tags="" position="0,300" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .5s&gt;&gt;Warning - critical error detected in core process. Terminating all active applications to preserve temporal continuity. Please restart system.&lt;&lt;/timed&gt;&gt;
+[[3]]</tw-passagedata><tw-passagedata pid="26" name="3" tags="" position="1100,900" size="100,100">&lt;&lt;set $doom++&gt;&gt;&lt;&lt;goto &quot;2&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Shutdown" tags="" position="0,300" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .5s&gt;&gt;Warning - critical error detected in core process. Terminating all active applications to preserve temporal continuity. Please restart system.&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 1.5s&gt;&gt;C:&gt;&lt;span class=&quot;blink&quot;&gt;_&lt;/span&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="28" name="Press Release 1" tags="" position="375,600" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Press Relations|Press Relations]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="Press Release 2" tags="" position="525,600" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Press Relations|Press Relations]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Press Release 3" tags="" position="375,750" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Press Relations|Press Relations]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Press Release 4" tags="" position="525,750" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Press Relations|Press Relations]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Press Release 5" tags="" position="450,900" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Press Relations|Press Relations]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Contract 1" tags="" position="75,600" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contract Statuses]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="Contract 2" tags="" position="225,600" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contract Statuses]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="Contract 3" tags="" position="75,750" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contract Statuses]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="Contract 4" tags="" position="225,750" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contract Statuses]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="Contract 5" tags="" position="150,900" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contract Statuses]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="Recently Terminated Employees" tags="" position="150,300" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Human Resources|Human Resources]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="New Employee Resources" tags="" position="150,150" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Human Resources|Human Resources]]&lt;&lt;/timed&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
