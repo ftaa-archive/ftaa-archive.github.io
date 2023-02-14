@@ -413,7 +413,7 @@ body {
 
 &lt;&lt;timed 2s&gt;&gt;CORV-OS is a data access and management system developed for the use of Coruvs Petra employees and authorized personnel. Copyright Corvus Petra 1982-1985. All rights reserved. Use, duplication, and disclosure are subject to terms stated in Corvus Petra user security agreement. CORV-OS is a registered trademark of Corvus Petra.&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 2.5s&gt;&gt;&lt;p align=&quot;center&quot;&gt;&lt;&lt;if $securitylevel gt 2&gt;&gt;[[Contracting]] | &lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;[[Press Relations]] | [[Human Resources]] | &lt;&lt;if $emplid is &quot;&quot;&gt;&gt;[[Employee Data|Employee Login]]&lt;&lt;else&gt;&gt;[[Employee Data|Employee Page]]&lt;&lt;/if&gt;&gt; | [[Return to CvP-DOS|Boot 3.5]]&lt;/p&gt; &lt;&lt;/timed&gt;&gt;&lt;/span&gt;
+&lt;&lt;timed 2.5s&gt;&gt;&lt;p align=&quot;center&quot;&gt;&lt;&lt;if $securitylevel gt 2&gt;&gt;[[Contracting|Contracts]] | &lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;[[Press Relations]] | [[Human Resources]] | &lt;&lt;if $emplid is &quot;&quot;&gt;&gt;[[Employee Data|Employee Login]]&lt;&lt;else&gt;&gt;[[Employee Data|Employee Page]]&lt;&lt;/if&gt;&gt; | [[Return to CvP-DOS|Boot 3.5]]&lt;/p&gt; &lt;&lt;/timed&gt;&gt;&lt;/span&gt;
 
 
 </tw-passagedata><tw-passagedata pid="2" name="Press Relations" tags="" position="450,450" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;Semper hendrerit elit. Aliquam sit amet tortor vel diam ullamcorper interdum et a odio. Vivamus quam nibh, placerat vel elementum nec, efficitur quis dolor. Pellentesque fermentum laoreet vestibulum. &lt;&lt;/timed&gt;&gt;
@@ -524,7 +524,9 @@ Environment
 
 &lt;&lt;timed 3s&gt;&gt;[[Return to CORV-OS|CORV_OS]]&lt;&lt;/timed&gt;&gt;&lt;/span&gt;
 
-</tw-passagedata><tw-passagedata pid="11" name="Contract Statuses" tags="" position="150,450" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;Semper hendrerit elit. Aliquam sit amet tortor vel diam ullamcorper interdum et a odio. Vivamus quam nibh, placerat vel elementum nec, efficitur quis dolor. Pellentesque fermentum laoreet vestibulum. &lt;&lt;/timed&gt;&gt;
+</tw-passagedata><tw-passagedata pid="11" name="Contracts" tags="" position="150,450" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;Contracting Dossiers&lt;&lt;/timed&gt;&gt;
+
+&lt;&lt;timed 1.25s&gt;&gt;Materials&lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 1.75s&gt;&gt;&lt;ul&gt;
 &lt;li&gt;[[Contract 1]]&lt;/li&gt;
@@ -605,7 +607,11 @@ Imp&lt;&lt;if $doom gte 2&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;l&lt;/span&
             			&lt;tr&gt;
 				&lt;td&gt;Name, &lt;br/&gt;01/01/1986&lt;/td&gt;
 				&lt;td&gt;&amp;nbsp;&lt;/td&gt;
-				&lt;td&gt;01/01/1986&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 2.5s&gt;&gt;[[Return to employee page|Employee Page]] | [[Log out|Employee Login]] | [[Personal Messages]]&lt;&lt;/timed&gt;&gt;
+				&lt;td&gt;01/01/1986&lt;/td&gt;&lt;/tr&gt;
+                        &lt;tr&gt;
+				&lt;td&gt;&lt;/td&gt;
+				&lt;td&gt;&lt;/td&gt;
+				&lt;td&gt;[[More Messages|Database Error]]&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 2.5s&gt;&gt;[[Return to employee page|Employee Page]] | [[Log out|Employee Login]] | [[Personal Messages]]&lt;&lt;/timed&gt;&gt;
 
 
 &lt;style&gt;		table {
@@ -664,7 +670,7 @@ Imp&lt;&lt;if $doom gte 2&gt;&gt;&lt;span id=&quot;flicker1&quot;&gt;l&lt;/span&
 RATE:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span class=&quot;blink&quot;&gt;NO DATA - Unable to reach HR server&lt;/span&gt;&lt;&lt;/timed&gt;&gt;
 
 
-&lt;&lt;timed 3.75s&gt;&gt;&lt;&lt;return &quot;Return to employee page&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="21" name="Personal Messages" tags="" position="850,750" size="100,100">&lt;&lt;if $emplid is &quot;0000004768617374&quot;&gt;&gt;&lt;&lt;goto&quot;Emil-Duc Messages&quot;&gt;&gt;
+&lt;&lt;timed 3.75s&gt;&gt;&lt;&lt;return &quot;Return to employee page&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="21" name="Personal Messages" tags="" position="850,750" size="100,100">&lt;&lt;if $emplid is &quot;0000004768617374&quot;&gt;&gt;&lt;&lt;goto&quot;Database Error&quot;&gt;&gt;
 &lt;&lt;elseif $emplid is &quot;0000004665746964&quot;&gt;&gt;&lt;&lt;goto&quot;Fitney Messages&quot;&gt;&gt;
 &lt;&lt;elseif $emplid is &quot;0000004861646573&quot;&gt;&gt;&lt;&lt;goto&quot;Riddle Messages&quot;&gt;&gt;
 &lt;&lt;else&gt;&gt;&lt;&lt;goto&quot;Employee Page&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="Flicker Test" tags="" position="1100,1200" size="100,100">&lt;div id=&quot;text&quot;&gt;
@@ -701,7 +707,7 @@ Your local time:&lt;&lt;set $CurDate = new Date(Date.now())&gt;&gt;
 
 [[3]]</tw-passagedata><tw-passagedata pid="26" name="3" tags="" position="975,1200" size="100,100">&lt;&lt;set $doom++&gt;&gt;&lt;&lt;goto &quot;2&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Shutdown" tags="" position="0,300" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .5s&gt;&gt;Warning - critical error detected in core process. Terminating all active applications to preserve temporal continuity. Please restart system.&lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;timed 1.5s&gt;&gt;C:&gt;&lt;span class=&quot;blink&quot;&gt;_&lt;/span&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="28" name="Press Release 1" tags="" position="375,600" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Press Relations|Press Relations]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="Press Release 2" tags="" position="375,700" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Press Relations|Press Relations]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Press Release 3" tags="" position="375,800" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Press Relations|Press Relations]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Press Release 4" tags="" position="375,900" size="100,100">&lt;&lt;if $securitylevel lt 4&gt;&gt;&lt;&lt;goto&quot;Restricted&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;timed 2.75s&gt;&gt;[[Return to Press Relations|Press Relations]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Contract 1" tags="" position="75,600" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contract Statuses]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Contract 2" tags="" position="225,600" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contract Statuses]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="Contract 3" tags="" position="75,750" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contract Statuses]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="Contract 4" tags="" position="225,750" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contract Statuses]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="Contract 5" tags="" position="150,900" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contract Statuses]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="Terminated Employees (Trouble Files)" tags="" position="150,300" size="100,100">&lt;&lt;if $securitylevel lt 4&gt;&gt;&lt;&lt;goto&quot;Restricted&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed 2.75s&gt;&gt;[[Return to Human Resources|Human Resources]]&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 1.5s&gt;&gt;C:&gt;&lt;span class=&quot;blink&quot;&gt;_&lt;/span&gt;&lt;&lt;/timed&gt;&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="28" name="Press Release 1" tags="" position="375,600" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Press Relations|Press Relations]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="Press Release 2" tags="" position="375,700" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Press Relations|Press Relations]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Press Release 3" tags="" position="375,800" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Press Relations|Press Relations]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Press Release 4" tags="" position="375,900" size="100,100">&lt;&lt;if $securitylevel lt 4&gt;&gt;&lt;&lt;goto&quot;Restricted&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;timed 2.75s&gt;&gt;[[Return to Press Relations|Press Relations]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Contract 1" tags="" position="75,600" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contracts]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Contract 2" tags="" position="225,600" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contracts]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="Contract 3" tags="" position="75,750" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contracts]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="Contract 4" tags="" position="225,750" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contracts]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="Contract 5" tags="" position="150,900" size="100,100">&lt;&lt;timed 2.75s&gt;&gt;[[Return to Contract Statuses|Contracts]]&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="Terminated Employees (Trouble Files)" tags="" position="150,300" size="100,100">&lt;&lt;if $securitylevel lt 4&gt;&gt;&lt;&lt;goto&quot;Restricted&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed 2.75s&gt;&gt;[[Return to Human Resources|Human Resources]]&lt;&lt;/timed&gt;&gt;
 
 
 &lt;/span&gt;</tw-passagedata><tw-passagedata pid="38" name="New Employee Resources" tags="" position="150,150" size="100,100">&lt;&lt;if $securitylevel lt 1&gt;&gt;&lt;&lt;goto&quot;Restricted&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;span id=&quot;softflicker&quot;&gt;
@@ -727,7 +733,7 @@ Your local time:&lt;&lt;set $CurDate = new Date(Date.now())&gt;&gt;
 
 &lt;&lt;Return&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="PR Submit" tags="" position="525,700" size="100,100">&lt;&lt;if $securitylevel lt 3&gt;&gt;&lt;&lt;goto&quot;Restricted&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;
 
-&lt;&lt;Return&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="Fitney Messages" tags="" position="1000,750" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;{{{
+&lt;&lt;Return&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="Fitney Messages" tags="" position="850,900" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;{{{
    _____ _____    ____  ____   _____ 
   / ____|  __ \  |  _ \|  _ \ / ____|
  | |    | |__) | | |_) | |_) | (___  
@@ -796,78 +802,7 @@ Your local time:&lt;&lt;set $CurDate = new Date(Date.now())&gt;&gt;
 			padding:3px;
 		}&lt;/style&gt;&lt;/span&gt;
 
-</tw-passagedata><tw-passagedata pid="52" name="Emil-Duc Messages" tags="" position="1000,600" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;{{{
-   _____ _____    ____  ____   _____ 
-  / ____|  __ \  |  _ \|  _ \ / ____|
- | |    | |__) | | |_) | |_) | (___  
- | |    |  ___/  |  _ &lt;|  _ &lt; \___ \ 
- | |____| |      | |_) | |_) |____) |
-  \_____|_|      |____/|____/|_____/ 
-
-}}}&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 1.25s&gt;&gt;Personal Messages - &lt;&lt;print $clearname&gt;&gt; (&lt;&lt;print $emplid&gt;&gt;)&lt;&lt;/timed&gt;&gt;
-&lt;&lt;timed 1.75s&gt;&gt;&lt;table width=&quot;90%&quot; align=&quot;center&quot;&gt;&lt;thead&gt;&lt;tr&gt;
-    &lt;th width=&quot;25%&quot;&gt;Correspondent&lt;/th&gt;&lt;th width=&quot;50%&quot;&gt;Subject&lt;/th&gt;
-				&lt;th width=&quot;25%&quot;&gt;Date&lt;/th&gt;
-			&lt;/tr&gt;
-		&lt;/thead&gt;
-		&lt;tbody&gt;
-			&lt;tr&gt;
-				&lt;td&gt;Name&lt;/td&gt;
-				&lt;td&gt;&amp;nbsp;&lt;/td&gt;
-				&lt;td&gt;01/01/1986&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-				&lt;td&gt;Name&lt;/td&gt;
-				&lt;td&gt;&amp;nbsp;&lt;/td&gt;
-				&lt;td&gt;01/01/1986&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-				&lt;td&gt;Name&lt;/td&gt;
-				&lt;td&gt;&amp;nbsp;&lt;/td&gt;
-				&lt;td&gt;01/01/1986&lt;/td&gt;
-			&lt;/tr&gt;
-            			&lt;tr&gt;
-				&lt;td&gt;Name&lt;/td&gt;
-				&lt;td&gt;&amp;nbsp;&lt;/td&gt;
-				&lt;td&gt;01/01/1986&lt;/td&gt;
-			&lt;/tr&gt;
-            			&lt;tr&gt;
-				&lt;td&gt;Name&lt;/td&gt;
-				&lt;td&gt;&amp;nbsp;&lt;/td&gt;
-				&lt;td&gt;01/01/1986&lt;/td&gt;&lt;/tr&gt;
-                		&lt;tr&gt;
-				&lt;td&gt;&lt;/td&gt;
-				&lt;td&gt;&lt;/td&gt;
-				&lt;td&gt;[[More Messages|Database Error]]&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;timed 2.5s&gt;&gt;
-                
-                [[Return to employee page|Employee Page]] | [[Log out|Employee Login]] | [[Return to BBS|BBS]]&lt;&lt;/timed&gt;&gt;
-
-
-&lt;style&gt;		table {
-			border:0px solid #a3ff9975;
-            border-shadow: 0px 0px 20px #000000ff;
-			border-collapse:collapse;
-            shadow: 0px 0px 20px #000000ff;
-			padding:3px;
-		}
-		table th {
-			border:1px solid #a3ff9975;
-            border-shadow: 0px 0px 20px #000000ff;
-			padding:0px;
-			background: #a3ff9975;
-            shadow: 0px 0px 20px #000000ff;
-			color: #00000075;
-            text-shadow: 0px 0px 20px #000000ff;
-		}
-		table td {
-			border:0px solid #a3ff9975;
-            border-shadow: 0px 0px 20px #000000ff;
-            shadow: 0px 0px 20px #000000ff;
-			text-align:left;
-			padding:3px;
-		}&lt;/style&gt;&lt;/span&gt;
-
-</tw-passagedata><tw-passagedata pid="53" name="Riddle Messages" tags="" position="1150,675" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;{{{
+</tw-passagedata><tw-passagedata pid="52" name="Riddle Messages" tags="" position="1000,900" size="100,100">&lt;span id=&quot;softflicker&quot;&gt;&lt;&lt;timed .75s&gt;&gt;{{{
    _____ _____    ____  ____   _____ 
   / ____|  __ \  |  _ \|  _ \ / ____|
  | |    | |__) | | |_) | |_) | (___  
@@ -936,7 +871,7 @@ Your local time:&lt;&lt;set $CurDate = new Date(Date.now())&gt;&gt;
 			padding:3px;
 		}&lt;/style&gt;&lt;/span&gt;
 
-</tw-passagedata><tw-passagedata pid="54" name="Overrun" tags="" position="900,200" size="100,100">&lt;&lt;timed .2s&gt;&gt;WARNING: 2 ERROR_FILE_NOT_FOUND&lt;&lt;/timed&gt;&gt;
+</tw-passagedata><tw-passagedata pid="53" name="Overrun" tags="" position="900,200" size="100,100">&lt;&lt;timed .2s&gt;&gt;WARNING: 2 ERROR_FILE_NOT_FOUND&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed .23s&gt;&gt;{{{**}}}Path to disk failed. Temporal protocol initiated with no data input.{{{**}}}&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed .32s&gt;&gt;WARNING: 34 ERROR_INVALID_DISK_CHANGE&lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed .35s&gt;&gt;WARNING: 51 ERROR_REMOTE_COMPUTER_NOT_LISTENING&lt;&lt;/timed&gt;&gt;
